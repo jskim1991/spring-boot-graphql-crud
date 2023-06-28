@@ -1,0 +1,13 @@
+type Customer {
+    id: ID
+    name: String
+}
+
+type Query {
+    customers: [Customer]
+}
+
+type Mutation {
+    add(name: String!): Customer
+    delete(id: ID!): Boolean
+}
